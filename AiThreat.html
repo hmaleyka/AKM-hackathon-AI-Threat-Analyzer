@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://192.168.60.172:5000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Analyzer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+        }
+        #chat-container {
+            width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #messages {
+            list-style-type: none;
+            padding: 0;
+        }
+        .message {
+            margin-bottom: 10px;
+        }
+        .user-message {
+            background-color: #f0f0f0;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        .bot-message {
+            background-color: #e0f7fa;
+            padding: 8px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+    <div class="signin" style="width: 500px;">
+        <div id="chat-container" style="background-color:#024b57; width: 700px;" >
+            <h2 style="color: aliceblue;">AI Threat Detection</h2>
+           
+ 
+    
+    <br>
+ 
+    
+
+    
+    
+            <form id="message-form">
+                <input type="text" id="user-input" placeholder="Type your message..." style="width: 200px; height: 38px;">
+                <a class="btn btn-danger">Send</a>
+            </form>
+        </div>
+    </div>
+    <!-- <div id="chat-container" style="background-color:#024b57; width: 700px" >
+        <h2 style="color: aliceblue;">AI Threat Detection</h2>
+        <ul id="messages"><li class="message user-message">About Threat:</li><li class="message bot-message">Report for threat
+<br>
+* ReportID:
+<br>
+* Description:
+
+<br>
+</li> <li class="message user-message"></li><li class="message bot-message">Hey there! What's up, bro? How can I help you today?</li><li class="message user-message">qaqa</li><li class="message bot-message">"qaqa" is a pretty interesting string of letters!  
+
+Do you want me to:
+
+* Risk Analysis
+* Unexpected Email
+* Lack of Context
+* Potential threats 
+* **Create something based on it?**  Perhaps you want me to write a poem or story using "qaqa" as inspiration.
+
+Tell me what you have in mind!</li></ul>
+        <form id="message-form">
+            <input type="text" id="user-input" placeholder="Type your message..." style="width: 200px; height: 38px;">
+            <a class="btn btn-danger">Send</a>
+        </form>
+    </div> -->
+</section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('message-form');
+            const userInput = document.getElementById('user-input');
+            const messages = document.getElementById('messages');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const userMessage = userInput.value.trim();
+                if (userMessage === '') return;
+
+                appendMessage('user', userMessage);
+                fetch('/message', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message: userMessage })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const botMessage = data.bot_response || 'Sorry, I could not understand that.';
+                    appendMessage('bot', botMessage);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    appendMessage('bot', 'Oops! Something went wrong.');
+                });
+
+                userInput.value = '';
+            });
+
+            function appendMessage(sender, message) {
+                const li = document.createElement('li');
+                li.classList.add('message', `${sender}-message`);
+                li.textContent = message;
+                messages.appendChild(li);
+                messages.scrollTop = messages.scrollHeight;
+            }
+        });
+    </script>
+
+</body></html>
